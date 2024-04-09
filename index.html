@@ -1,0 +1,51 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-04-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Solucion pracrica 4
+
+## Solucion pregunta parcial
+
+```{r}
+```
+
+#Pregunta 1
+
+#Quina es la probabilidad que pase un tiempo de 0.033 entre dos llamadas
+# p ( a <= x b ) = F(b) - F (a)
+# p (x >= 0.052 ) = 1 - pexp (0.052,25) 
+#probabilidad que pase 0.033 es 01
+#la probabilidad de que pase como minimo 0.052
+
+1-pexp (0.052,25)
+
+#La funcion de densidad es c
+
+curve(dexp,25)  # (d) viene de densidad 
+
+#Funcion de distribucion exponencial
+
+curve(dexp,25)
+ 
+#Funcion de distribucion exponencial 
+
+curve(pexp,25, xlim=c(0,25)) #no queda muy claro lo que quiere hacer el profe
+
+qexp(0.5,25)
+
+#Simulacion entre dos tiempo de espra 
+
+rexp(1,25)
+
+#simulacion
+
+simul<- (0.5,25) 
+histo(sim)  
+# el promedio es 
+mean(simul)
